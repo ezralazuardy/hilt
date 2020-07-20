@@ -1,0 +1,16 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Android Setup Action
+      uses: kineticengines/setup-android-actions@v0.1
